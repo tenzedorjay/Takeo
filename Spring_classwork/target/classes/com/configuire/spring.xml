@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean class="com.project.EmployeePojo" id="emp">
+<property name="name"><value>Tenzin</value></property>
+<property name="eid"><value>102</value></property>
+</bean>
+<bean class="com.project.AddressPojo" id="address">
+
+<property name="sid"><value>21</value></property>
+<property name="sname"><value>Kathmandu</value></property>
+<property name="emp"> <ref bean="emp"/></property>
+
+</bean>
+</beans>
